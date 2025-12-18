@@ -7,8 +7,18 @@ header {
     background-color: #81fb85;
 }
 
+/* STEP 3: nav uses inline-block and width */
 nav {
     background-color: #808080;
+    display: inline-block;
+    width: 80%;
+}
+
+/* STEP 4: style ONLY images inside nav */
+nav img {
+    width: 10%;
+    position: relative;
+    top: 20px;
 }
 
 main {
@@ -21,10 +31,13 @@ footer {
     text-align: center;
 }
 
+/* STEP 2: comment out existing li styling */
+/*
 li {
     display: inline-block;
     width: 150px;
 }
+*/
 
 h1 {
     text-align: center;
@@ -34,4 +47,40 @@ h1 {
 
 p {
     line-height: 2.0;
+}
+
+/* STEP 1: Skip to Main Content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* STEP 5 & 7: Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: start;
+    row-gap: 20px;
+}
+
+/* STEP 6: images inside grid only */
+.grid img {
+    width: 100%;
+}
+
+/* STEP 8: Flex layout */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
